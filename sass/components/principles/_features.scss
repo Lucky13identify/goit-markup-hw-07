@@ -1,0 +1,33 @@
+.features__head {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features__text {
+  line-height: 1.71;
+  color: map-get($colors, secondary-text-color);
+}
+
+.features {
+  display: flex;
+  gap: 30px;
+}
+
+.features__list {
+  width: 270px;
+}
+
+.features__border {
+  border-radius: 4px;
+  background-color: map-get($colors, background-color-two);
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}

@@ -4,43 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Document</title>
   </head>
   <body>
     <!-- Шапка сайта -->
     <header class="header">
-      <div class="header container">
-        <nav class="nav">
-          <a href="./index.html" class="logo"
-            >Web<span class="studio-black">Studio</span></a
+      <div class="container header-container">
+        <nav class="navigation-header">
+          <a href="./index.html" class="navigation-header__logo"
+            >Web<span class="navigation-header__logo--black">Studio</span></a
           >
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="./index.html" class="nav-a studio current">Студія</a>
+          <ul class="navigation-header__list-block">
+            <li class="navigation-header__list">
+              <a href="./index.html" class="navigation-header__page--current"
+                >Студія</a
+              >
             </li>
-            <li class="nav-item">
-              <a href="./portfolio.html" class="nav-a">Портфоліо</a>
+            <li class="navigation-header__list">
+              <a href="./portfolio.html" class="navigation-header__page"
+                >Портфоліо</a
+              >
             </li>
-            <li class="nav-item">
-              <a href="" class="nav-a contacts">Контакти</a>
+            <li class="navigation-header__list">
+              <a href="" class="navigation-header__page">Контакти</a>
             </li>
           </ul>
         </nav>
         <ul class="address">
-          <li class="communications">
+          <li class="address__communications">
             <a
               href="mailto:info@devstudio.com"
               lang="en"
-              class="communications-mail email"
+              class="address__contacts"
             >
               <svg class="icon-envelope">
                 <use href="./images/icons.svg#icon-envelope"></use>
@@ -48,8 +44,8 @@
               info@studio.com</a
             >
           </li>
-          <li class="communications">
-            <a href="tel:+380961111111" class="communications-mail phone"
+          <li class="address__communications">
+            <a href="tel:+380961111111" class="address__contacts"
               ><svg class="icon-smartphone">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -64,10 +60,7 @@
       <!-- Герой -->
       <section class="hero overlay">
         <div class="container">
-          <h1 class="hero-head">
-            Ефективні рішення для <br />
-            вашого бізнесу
-          </h1>
+          <h1 class="hero-head">Ефективні рішення для вашого бізнесу</h1>
           <button data-modal-open type="button" class="hero-button">
             Замовити послугу
           </button>
@@ -78,51 +71,51 @@
       <section class="principles">
         <div class="container">
           <h2 class="visually-hidden">Наші особливості</h2>
-          <ul class="table-list">
-            <li class="principles-list">
-              <div class="border-grey">
+          <ul class="features">
+            <li class="features__list">
+              <div class="features__border">
                 <svg class="icon-antenna" width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="principles-list-head">Увага до деталей</h3>
-              <p class="principles-list-text">
+              <h3 class="features__head">Увага до деталей</h3>
+              <p class="features__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
 
-            <li class="principles-list">
-              <div class="border-grey">
+            <li class="eatures__list">
+              <div class="features__border">
                 <svg class="icon-clock" width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="principles-list-head">Пунктуальність</h3>
-              <p class="principles-list-text">
+              <h3 class="features__head">Пунктуальність</h3>
+              <p class="features__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="principles-list">
-              <div class="border-grey">
+            <li class="features__list">
+              <div class="features__border">
                 <svg class="icon-diagram" width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="principles-list-head">Планування</h3>
-              <p class="principles-list-text">
+              <h3 class="features__head">Планування</h3>
+              <p class="features__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="principles-list">
-              <div class="border-grey">
+            <li class="features__list">
+              <div class="features__border">
                 <svg class="icon-astronaut" width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="principles-list-head">Сучасні технології</h3>
-              <p class="principles-list-text">
+              <h3 class="features__head">Сучасні технології</h3>
+              <p class="features__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -135,30 +128,30 @@
       <section class="neon">
         <div class="container">
           <h2 class="occupation">Чим ми займаємося</h2>
-          <ul class="ul-occupation">
-            <li class="image">
+          <ul class="perfomance">
+            <li class="perfomance__list">
               <img
                 src="./images/box1.jpg"
                 alt="Людина працює за комп'ютером"
                 width="370"
               />
-              <p class="text-neon">Десктопні додатки</p>
+              <p class="perfomance__text">Десктопні додатки</p>
             </li>
-            <li class="image">
+            <li class="perfomance__list">
               <img
                 src="./images/box2.jpg"
                 alt="Людина працює на телефоні"
                 width="370"
               />
-              <p class="text-neon">Мобільні додатки</p>
+              <p class="perfomance__text">Мобільні додатки</p>
             </li>
-            <li class="image">
+            <li class="perfomance__list">
               <img
                 src="./images/box3.jpg"
                 alt="Людина працює на планшеті"
                 width="370"
               />
-              <p class="text-neon">Дизайнерські рішення</p>
+              <p class="perfomance__text">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
