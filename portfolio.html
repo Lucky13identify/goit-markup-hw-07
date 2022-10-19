@@ -4,38 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Document</title>
-
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Шапка сайта -->
     <header class="header">
-      <div class="header container">
-        <nav class="nav">
-          <a href="./index.html" class="logo"
-            >Web<span class="studio-black">Studio</span></a
+      <div class="container header-container">
+        <nav class="navigation-header">
+          <a href="./index.html" class="navigation-header__logo"
+            >Web<span class="navigation-header__logo--black">Studio</span></a
           >
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="./index.html" class="nav-a">Студія</a>
+          <ul class="navigation-header__list-block">
+            <li class="navigation-header__list">
+              <a href="./index.html" class="navigation-header__page">Студія</a>
             </li>
-            <li class="nav-item">
-              <a href="./portfolio.html" class="nav-a studio current"
+            <li class="navigation-header__list">
+              <a
+                href="./portfolio.html"
+                class="navigation-header__page--current"
                 >Портфоліо</a
               >
             </li>
-            <li class="nav-item">
-              <a href="" class="nav-a contacts">Контакти</a>
+            <li class="navigation-header__list">
+              <a href="" class="navigation-header__page">Контакти</a>
             </li>
           </ul>
         </nav>
         <ul class="address">
-          <li class="communications">
+          <li class="address__communications">
             <a
               href="mailto:info@devstudio.com"
               lang="en"
-              class="communications-mail email"
+              class="address__contacts"
             >
               <svg class="icon-envelope">
                 <use href="./images/icons.svg#icon-envelope"></use>
@@ -43,8 +44,8 @@
               info@studio.com</a
             >
           </li>
-          <li class="communications">
-            <a href="tel:+380961111111" class="communications-mail phone"
+          <li class="address__communications">
+            <a href="tel:+380961111111" class="address__contacts"
               ><svg class="icon-smartphone">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -54,42 +55,43 @@
         </ul>
       </div>
     </header>
+
     <main>
       <!--Menu-->
       <section class="menu">
         <h1 class="visually-hidden">Примеры работ</h1>
         <div class="container">
-          <ul class="list-menu">
-            <li class="list-section">
-              <button type="button" class="menu-section">Усі</button>
+          <ul class="top-bar">
+            <li class="top-bar__list">
+              <button type="button" class="top-bar__button">Усі</button>
             </li>
-            <li class="list-section">
-              <button type="button" class="menu-section">Веб-сайти</button>
+            <li class="top-bar__list">
+              <button type="button" class="top-bar__button">Веб-сайти</button>
             </li>
-            <li class="list-section">
-              <button type="button" class="menu-section">Додатки</button>
+            <li class="top-bar__list">
+              <button type="button" class="top-bar__button">Додатки</button>
             </li>
-            <li class="list-section">
-              <button type="button" class="menu-section">Дизайн</button>
+            <li class="top-bar__list">
+              <button type="button" class="top-bar__button">Дизайн</button>
             </li>
-            <li class="list-section">
-              <button type="button" class="menu-section">Маркетинг</button>
+            <li class="top-bar__list">
+              <button type="button" class="top-bar__button">Маркетинг</button>
             </li>
           </ul>
 
           <!--Pictutes-->
 
           <ul class="work-list">
-            <li class="pictures-list">
-              <a href="" class="ref-works"
+            <li class="work-list__list">
+              <a href="" class="work-list__ref"
                 ><div class="img-thumb">
                   <img
                     src="./images/site.jpg"
                     alt="гра в баскетбол"
                     width="370"
                   />
-                  <div class="opacity-list">
-                    <p class="text-overlay">
+                  <div class="img-thumb__opacity">
+                    <p class="img-thumb__overlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -98,22 +100,22 @@
                   </div>
                 </div>
 
-                <div class="pictures-list-div">
-                  <h2 class="pictures-list-head">Технокряк</h2>
-                  <p class="spictures-list-paragraph">Веб-сайт</p>
+                <div class="work-list__div">
+                  <h2 class="work-list__head">Технокряк</h2>
+                  <p class="work-list__paragraph">Веб-сайт</p>
                 </div></a
               >
             </li>
-            <li class="pictures-list">
-              <a href="" class="ref-works"
+            <li class="work-list__list">
+              <a href="" class="work-list__ref"
                 ><div class="img-thumb">
                   <img
                     src="./images/basket.jpg"
                     alt="гра в баскетбол"
                     width="370"
                   />
-                  <div class="opacity-list">
-                    <p class="text-overlay">
+                  <div class="img-thumb__opacity">
+                    <p class="img-thumb__overlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -122,20 +124,24 @@
                   </div>
                 </div>
 
-                <div class="pictures-list-div">
-                  <h2 class="pictures-list-head">
+                <div class="work-list__div">
+                  <h2 class="work-list__head">
                     Постер New Orlean vs Golden Star
                   </h2>
-                  <p class="spictures-list-paragraph">Дизайн</p>
+                  <p class="work-list__paragraph">Дизайн</p>
                 </div></a
               >
             </li>
-            <li class="pictures-list">
-              <a href="" class="ref-works"
+            <li class="work-list__list">
+              <a href="" class="work-list__ref"
                 ><div class="img-thumb">
-                  <img src="./images/seafood.jpg" alt="ресторан" width="370" />
-                  <div class="opacity-list">
-                    <p class="text-overlay">
+                  <img
+                    src="./images/seafood.jpg"
+                    alt="гра в баскетбол"
+                    width="370"
+                  />
+                  <div class="img-thumb__opacity">
+                    <p class="img-thumb__overlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -143,22 +149,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="pictures-list-div">
-                  <h2 class="pictures-list-head">Ресторан Seafood</h2>
-                  <p class="spictures-list-paragraph">Додаток</p>
+
+                <div class="work-list__div">
+                  <h2 class="work-list__head">Ресторан Seafood</h2>
+                  <p class="work-list__paragraph">Додаток</p>
                 </div></a
               >
             </li>
-            <li class="pictures-list">
-              <a href="" class="ref-works"
+            <li class="work-list__list">
+              <a href="" class="work-list__ref"
                 ><div class="img-thumb">
                   <img
                     src="./images/headphones.jpg"
-                    alt="навушники"
+                    alt="гра в баскетбол"
                     width="370"
                   />
-                  <div class="opacity-list">
-                    <p class="text-overlay">
+                  <div class="img-thumb__opacity">
+                    <p class="img-thumb__overlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -166,18 +173,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="pictures-list-div">
-                  <h2 class="pictures-list-head">Проєкт Prime</h2>
-                  <p class="spictures-list-paragraph">Маркетинг</p>
+
+                <div class="work-list__div">
+                  <h2 class="work-list__head">Проєкт Prime</h2>
+                  <p class="work-list__paragraph">Маркетинг</p>
                 </div></a
               >
             </li>
-            <li class="pictures-list">
-              <a href="" class="ref-works"
+            <li class="work-list__list">
+              <a href="" class="work-list__ref"
                 ><div class="img-thumb">
-                  <img src="./images/boxes.jpg" alt="короба" width="370" />
-                  <div class="opacity-list">
-                    <p class="text-overlay">
+                  <img
+                    src="./images/boxes.jpg"
+                    alt="гра в баскетбол"
+                    width="370"
+                  />
+                  <div class="img-thumb__opacity">
+                    <p class="img-thumb__overlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -185,18 +197,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="pictures-list-div">
-                  <h2 class="pictures-list-head">Проєкт Boxes</h2>
-                  <p class="spictures-list-paragraph">Додаток</p>
+
+                <div class="work-list__div">
+                  <h2 class="work-list__head">Проєкт Boxes</h2>
+                  <p class="work-list__paragraph">Додаток</p>
                 </div></a
               >
             </li>
-            <li class="pictures-list">
-              <a href="" class="ref-works"
+            <li class="work-list__list">
+              <a href="" class="work-list__ref"
                 ><div class="img-thumb">
-                  <img src="./images/screen.jpg" alt="монітор" width="370" />
-                  <div class="opacity-list">
-                    <p class="text-overlay">
+                  <img
+                    src="./images/screen.jpg"
+                    alt="гра в баскетбол"
+                    width="370"
+                  />
+                  <div class="img-thumb__opacity">
+                    <p class="img-thumb__overlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -204,18 +221,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="pictures-list-div">
-                  <h2 class="pictures-list-head">Inspiration has no Borders</h2>
-                  <p class="spictures-list-paragraph">Веб-сайт</p>
+
+                <div class="work-list__div">
+                  <h2 class="work-list__head">Inspiration has no Borders</h2>
+                  <p class="work-list__paragraph">Веб-сайт</p>
                 </div></a
               >
             </li>
-            <li class="pictures-list">
-              <a href="" class="ref-works"
+            <li class="work-list__list">
+              <a href="" class="work-list__ref"
                 ><div class="img-thumb">
-                  <img src="./images/book.jpg" alt="книга" width="370" />
-                  <div class="opacity-list">
-                    <p class="text-overlay">
+                  <img
+                    src="./images/book.jpg"
+                    alt="гра в баскетбол"
+                    width="370"
+                  />
+                  <div class="img-thumb__opacity">
+                    <p class="img-thumb__overlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -223,18 +245,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="pictures-list-div">
-                  <h2 class="pictures-list-head">Видання Limited Edition</h2>
-                  <p class="spictures-list-paragraph">Дизайн</p>
+
+                <div class="work-list__div">
+                  <h2 class="work-list__head">Видання Limited Edition</h2>
+                  <p class="work-list__paragraph">Дизайн</p>
                 </div></a
               >
             </li>
-            <li class="pictures-list">
-              <a href="" class="ref-works"
+            <li class="work-list__list">
+              <a href="" class="work-list__ref"
                 ><div class="img-thumb">
-                  <img src="./images/lab.jpg" alt="лейба" width="370" />
-                  <div class="opacity-list">
-                    <p class="text-overlay">
+                  <img
+                    src="./images/lab.jpg"
+                    alt="гра в баскетбол"
+                    width="370"
+                  />
+                  <div class="img-thumb__opacity">
+                    <p class="img-thumb__overlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -242,18 +269,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="pictures-list-div">
-                  <h2 class="pictures-list-head">Проект LAB</h2>
-                  <p class="spictures-list-paragraph">Маркетинг</p>
+
+                <div class="work-list__div">
+                  <h2 class="work-list__head">Проєкт LAB</h2>
+                  <p class="work-list__paragraph">Маркетинг</p>
                 </div></a
               >
             </li>
-            <li class="pictures-list">
-              <a href="" class="ref-works"
+            <li class="work-list__list">
+              <a href="" class="work-list__ref"
                 ><div class="img-thumb">
-                  <img src="./images/laptop.jpg" alt="комп'ютер" width="370" />
-                  <div class="opacity-list">
-                    <p class="text-overlay">
+                  <img
+                    src="./images/laptop.jpg"
+                    alt="гра в баскетбол"
+                    width="370"
+                  />
+                  <div class="img-thumb__opacity">
+                    <p class="img-thumb__overlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -261,9 +293,10 @@
                     </p>
                   </div>
                 </div>
-                <div class="pictures-list-div">
-                  <h2 class="pictures-list-head">Growing Business</h2>
-                  <p class="spictures-list-paragraph">Додаток</p>
+
+                <div class="work-list__div">
+                  <h2 class="work-list__head">Growing Business</h2>
+                  <p class="work-list__paragraph">Додаток</p>
                 </div></a
               >
             </li>

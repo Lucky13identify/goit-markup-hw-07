@@ -20,3 +20,30 @@
 .neon {
   padding-bottom: 94px;
 }
+
+//Team
+
+.team {
+  background: map-get($colors, background-color-two);
+  padding: 94px 0;
+}
+
+//Companies
+
+.companies {
+  padding: 94px 0;
+}
+
+//Menu
+
+.menu {
+  padding: 94px 0;
+}
+
+//Work-list
+
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
