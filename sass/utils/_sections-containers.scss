@@ -47,3 +47,15 @@
   flex-wrap: wrap;
   margin-top: 50px;
 }
+
+//Footer
+
+.footer {
+  background: map-get($colors, background-color-footer);
+  padding: 60px 0;
+}
+
+.footer > .container {
+  display: flex;
+  align-items: baseline;
+}
