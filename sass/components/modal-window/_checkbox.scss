@@ -1,0 +1,71 @@
+.conditions-input {
+  position: relative;
+  margin-top: 20px;
+  color: map-get($colors, secondary-text-color);
+}
+
+.conditions-input__field {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+.conditions-input__check-box {
+  width: 16px;
+  height: 15px;
+  position: block;
+  left: -25px;
+  top: 4px;
+  cursor: pointer;
+  border: 2px solid map-get($colors, web-color);
+  border-radius: 2px;
+}
+.checkbox:checked + .conditions-input__check-box {
+  border: none;
+  background-color: map-get($colors, main-blue-color);
+  background-image: url(../images/icon-check.svg);
+  background-origin: border-box;
+  background-size: cover;
+  background-origin: content-box;
+}
+
+.conditions-input__agreement {
+  color: map-get($colors, main-blue-color);
+  text-decoration: underline;
+}
+
+.button-field {
+  display: block;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background: map-get($colors, main-blue-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  color: map-get($colors, white-text-color);
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: background-color 250ms map-get($cubic, cubic);
+
+  &:hover,
+  &:focus {
+    background-color: map-get($colors, button-hover);
+  }
+}

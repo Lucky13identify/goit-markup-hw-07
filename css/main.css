@@ -592,6 +592,10 @@ img {
           align-items: center;
 }
 
+.hero .container {
+  text-align: center;
+}
+
 .principles {
   padding: 94px 0;
 }
@@ -1490,4 +1494,86 @@ input:focus {
 input:focus + .field-name-svg,
 input:hover + .field-name-svg {
   fill: #188ce8;
+}
+
+.conditions-input {
+  position: relative;
+  margin-top: 20px;
+  color: #757575;
+}
+
+.conditions-input__field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.conditions-input__check-box {
+  width: 16px;
+  height: 15px;
+  position: block;
+  left: -25px;
+  top: 4px;
+  cursor: pointer;
+  border: 2px solid #000000;
+  border-radius: 2px;
+}
+
+.checkbox:checked + .conditions-input__check-box {
+  border: none;
+  background-color: #2196f3;
+  background-image: url(../images/icon-check.svg);
+  background-origin: border-box;
+  background-size: cover;
+  background-origin: content-box;
+}
+
+.conditions-input__agreement {
+  color: #2196f3;
+  text-decoration: underline;
+}
+
+.button-field {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background: #2196f3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  color: #ffffff;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 30px;
+  cursor: pointer;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-field:hover, .button-field:focus {
+  background-color: #188ce8;
 }/*# sourceMappingURL=main.css.map */
