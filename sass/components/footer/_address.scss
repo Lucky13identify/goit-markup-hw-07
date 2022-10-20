@@ -3,13 +3,14 @@
 }
 
 .address-container__street {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
   transition: color 250ms map-get($cubic, cubic);
   color: map-get($colors, white-text-color);
-  font-style: normal;
 
   &:hover,
   &:focus {
@@ -19,13 +20,14 @@
 
 .address-container__mail,
 .address-container__phone {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
   transition: color 250ms map-get($cubic, cubic);
   color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
 
   &:hover,
   &:focus {

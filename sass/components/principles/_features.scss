@@ -1,5 +1,6 @@
 .features__head {
   margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -22,12 +23,14 @@
 }
 
 .features__border {
-  border-radius: 4px;
-  background-color: map-get($colors, background-color-two);
-  width: 270px;
-  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 270px;
+  height: 120px;
   margin-bottom: 30px;
+
+  border-radius: 4px;
+
+  background-color: map-get($colors, background-color-two);
 }

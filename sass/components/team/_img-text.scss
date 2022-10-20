@@ -1,10 +1,11 @@
 .team-our {
+  text-align: center;
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
 }
 
 .crew {
@@ -26,6 +27,7 @@
 
 .crew__human {
   margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -37,5 +39,6 @@
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+
   color: map-get($colors, secondary-text-color);
 }

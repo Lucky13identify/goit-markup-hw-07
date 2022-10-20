@@ -1,7 +1,7 @@
 .social-network {
   display: flex;
-  gap: 10px;
   justify-content: center;
+  gap: 10px;
   margin-top: 20px;
 }
 
@@ -12,10 +12,13 @@
   align-items: center;
   width: 44px;
   height: 44px;
+
   border-radius: 50px;
+
   color: map-get($colors, inks-color);
   transition: color 250ms map-get($cubic, cubic),
     background-color 250ms map-get($cubic, cubic);
+
   &:hover,
   &:focus {
     background-color: map-get($colors, main-blue-color);

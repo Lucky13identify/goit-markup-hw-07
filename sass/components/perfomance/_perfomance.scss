@@ -1,12 +1,13 @@
 .occupation {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 50px;
   margin-bottom: 50px;
   margin-top: 0;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 .perfomance {
@@ -21,16 +22,16 @@
 .perfomance__text {
   display: flex;
   position: absolute;
-  height: 70px;
-  width: 100%;
   align-items: center;
   justify-content: center;
+  height: 70px;
+  width: 100%;
   bottom: 0;
+
   font-weight: 700;
-
   line-height: 1.14px;
-
   text-transform: uppercase;
+
   color: map-get($colors, white-text-color);
   background-color: rgba(47, 48, 58, 0.8);
 }

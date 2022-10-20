@@ -30,8 +30,8 @@
 //Team
 
 .team {
-  background: map-get($colors, background-color-two);
   padding: 94px 0;
+  background: map-get($colors, background-color-two);
 }
 
 //Companies
@@ -57,8 +57,8 @@
 //Footer
 
 .footer {
-  background: map-get($colors, background-color-footer);
   padding: 60px 0;
+  background: map-get($colors, background-color-footer);
 }
 
 .footer > .container {
@@ -70,14 +70,16 @@
 
 .modal {
   position: absolute;
+  padding: 40px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
+
+  border-radius: 4px;
+
+  transform: translate(-50%, -50%);
   background-color: map-get($colors, white-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding: 40px;
 }
